@@ -7,6 +7,10 @@ public class LambdaExpressionExample {
 		Addition ad = () -> System.out.println("add method implemented using Lambda Expression");
 		ad.add();
 		
+		//calling default and static methods
+		ad.print(); //calling default which is defined in interface
+		Addition.print1(); //static method which is defined in interface
+		
 		Addition adNew = () -> {
 			int res = 5 + 4;
 			System.out.println("addition = "+res);
@@ -35,5 +39,9 @@ public class LambdaExpressionExample {
 		float divResult = divCode.div(6, 3);
 		System.out.println("Division = "+divResult);
 	}
+	
+	
+
+
 
 }
